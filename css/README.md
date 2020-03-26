@@ -26,7 +26,7 @@ at-rule-name-space-after <br>
     }
 ```
        
-### Maximum nesting 3-4 levels
+### Maximum nesting 4 levels
    
 **stylelint: max-nesting-depth**
 
