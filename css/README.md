@@ -5,7 +5,7 @@ To use those, make sure you have stylelint (https://www.npmjs.com/package/stylel
 There are some rules in place that are undocumented here. They keep you from writing invalid css, using invalid media queries etc.     
 
 
-###Should I use [BEM] (http://getbem.com/) or not? 
+### Should I use [BEM] (http://getbem.com/) or not? 
 
 If you're the one who starts the project, it's your choice. This guide does not interfere with it. <br>
 It's the responsibility of the future developers to adhere to naming conventions already in place.
@@ -91,7 +91,7 @@ Prefer block comments for explanations at the beggining of the module. (if neces
     
 ### Javascript Hooks
     
-Even if you are not using [BEM] (http://getbem.com/), you should **avoid binding to the same class in both your JavaScript and CSS.
+Even if you are not using [BEM] (http://getbem.com/), you should **avoid binding to the same class in both your JavaScript and CSS.**
     Conflating the two often leads to, at a minimum, time wasted during refactoring when a developer must cross-reference each class they are changing, and at its worst, developers being afraid to make changes for fear of breaking functionality.
     JS hooks should use a camelCased name prefixed with js-.
     
