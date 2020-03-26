@@ -16,7 +16,7 @@ Other Style Guides
   - [React](react/)
   - [CSS-in-JavaScript](css-in-javascript/)
   - [CSS & Sass](https://github.com/airbnb/css)
-  - [Ruby](https://github.com/airbnb/ruby)
+  - [Ruby](https://github.com/airbnb/ruby)object-curly-spacing
 
 ## Table of Contents
 
@@ -2826,7 +2826,9 @@ Other Style Guides
     ```
 
   <a name="whitespace--in-braces"></a><a name="18.11"></a>
-  - [19.12](#whitespace--in-braces) Add spaces inside curly braces. eslint: [`object-curly-spacing`](https://eslint.org/docs/rules/object-curly-spacing.html)
+  - [19.12](#whitespace--in-braces) [TO BE CHANGED] Add spaces inside curly braces. eslint: [`object-curly-spacing`](https://eslint.org/docs/rules/object-curly-spacing.html)
+
+  > Why to change? Extra keystrokes for nothing
 
     ```javascript
     // bad
