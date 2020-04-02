@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-neurony",
-  "version": "18.1.0",
+  "version": "1.0.1",
   "description": "ESLint config for Neurony Solutions based on Airbnb's.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,6 @@
     "lint": "eslint .",
     "pretests-only": "node ./test/requires",
     "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent tests-only",
     "link:eslint": "cd node_modules/eslint && npm link --production && cd -",
@@ -74,7 +73,7 @@
   "peerDependencies": {
     "eslint": "^5.16.0 || ^6.8.0",
     "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-jsx-a11y": "^6.2.3"
   },
   "engines": {
     "node": ">= 6"
