@@ -1,29 +1,30 @@
 {
-  "name": "eslint-config-airbnb-base",
-  "version": "14.1.0",
-  "description": "Airbnb's base JS ESLint config, following our styleguide",
+  "name": "eslint-config-neurony",
+  "version": "18.1.0",
+  "description": "ESLint config for Neurony Solutions based on Airbnb's.",
   "main": "index.js",
   "scripts": {
     "prelint": "eclint check * rules/* test/*",
-    "lint": "eslint --report-unused-disable-directives .",
+    "lint": "eslint .",
     "pretests-only": "node ./test/requires",
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent tests-only",
-    "pretravis": ":",
+    "link:eslint": "cd node_modules/eslint && npm link --production && cd -",
+    "pretravis": "npm run link:eslint && cd ../eslint-config-airbnb-base && npm link eslint && npm install && npm link && cd - && npm link --no-save eslint-config-airbnb-base",
     "travis": "npm run --silent tests-only",
-    "posttravis": ":"
+    "posttravis": "npm unlink --no-save eslint-config-airbnb-base eslint >/dev/null &"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript"
+    "url": "https://github.com/Neurony/javascript"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "config",
-    "airbnb",
+    "neurony",
     "javascript",
     "styleguide",
     "es2015",
@@ -49,9 +50,14 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
+    "url": "https://github.com/Neurony/javascript/issues"
   },
-  "homepage": "https://github.com/airbnb/javascript",
+  "homepage": "https://github.com/Neurony/javascript",
+  "dependencies": {
+    "eslint-config-airbnb-base": "^14.1.0",
+    "object.assign": "^4.1.0",
+    "object.entries": "^1.1.1"
+  },
   "devDependencies": {
     "@babel/runtime": "^7.8.7",
     "babel-preset-airbnb": "^4.4.0",
@@ -60,20 +66,17 @@
     "eslint": "^5.16.0 || ^6.8.0",
     "eslint-find-rules": "^3.4.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "in-publish": "^2.0.0",
     "safe-publish-latest": "^1.1.4",
     "tape": "^5.0.0-next.4"
   },
   "peerDependencies": {
     "eslint": "^5.16.0 || ^6.8.0",
-    "eslint-plugin-import": "^2.20.1"
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
   },
   "engines": {
     "node": ">= 6"
-  },
-  "dependencies": {
-    "confusing-browser-globals": "^1.0.9",
-    "object.assign": "^4.1.0",
-    "object.entries": "^1.1.1"
   }
 }
