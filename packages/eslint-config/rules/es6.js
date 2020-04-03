@@ -90,13 +90,6 @@ module.exports = {
     // require let or const instead of var
     'no-var': 'error',
 
-    // require method and property shorthand syntax for object literals
-    // https://eslint.org/docs/rules/object-shorthand
-    'object-shorthand': ['error', 'always', {
-      ignoreConstructors: false,
-      avoidQuotes: true,
-    }],
-
     // suggest using arrow functions as callbacks
     'prefer-arrow-callback': ['error', {
       allowNamedFunctions: false,

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-neurony",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ESLint config for Neurony Solutions based on Airbnb's.",
   "main": "index.js",
   "scripts": {
