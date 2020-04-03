@@ -1,19 +1,11 @@
 {
   "name": "eslint-config-neurony",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint config for Neurony Solutions based on Airbnb's.",
   "main": "index.js",
   "scripts": {
     "prelint": "eclint check * rules/* test/*",
     "lint": "eslint .",
-    "pretests-only": "node ./test/requires",
-    "tests-only": "babel-tape-runner ./test/test-*.js",
-    "pretest": "npm run --silent lint",
-    "test": "npm run --silent tests-only",
-    "link:eslint": "cd node_modules/eslint && npm link --production && cd -",
-    "pretravis": "npm run link:eslint && cd ../eslint-config-airbnb-base && npm link eslint && npm install && npm link && cd - && npm link --no-save eslint-config-airbnb-base",
-    "travis": "npm run --silent tests-only",
-    "posttravis": "npm unlink --no-save eslint-config-airbnb-base eslint >/dev/null &"
   },
   "repository": {
     "type": "git",
@@ -26,12 +18,8 @@
     "neurony",
     "javascript",
     "styleguide",
-    "es2015",
-    "es2016",
-    "es2017",
-    "es2018"
   ],
-  "author": "Jake Teton-Landis (https://twitter.com/@jitl)",
+  "author": "Andrei Radoi",
   "contributors": [
     {
       "name": "Jake Teton-Landis",

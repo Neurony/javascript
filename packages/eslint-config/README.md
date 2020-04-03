@@ -10,7 +10,7 @@ npm i eslint-config-neurony
 ### 2. In project root make a folder called ‘styleguide’ and in it create a new eslint-config.js file:
 ```sh
 mkdir styleguide
-cd styldeguide
+cd styleguide
 touch eslint-config.js
 ```
 
