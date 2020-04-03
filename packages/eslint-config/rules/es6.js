@@ -109,21 +109,6 @@ module.exports = {
       ignoreReadBeforeAssign: true,
     }],
 
-    // Prefer destructuring from arrays and objects
-    // https://eslint.org/docs/rules/prefer-destructuring
-    'prefer-destructuring': ['error', {
-      VariableDeclarator: {
-        array: false,
-        object: true,
-      },
-      AssignmentExpression: {
-        array: true,
-        object: false,
-      },
-    }, {
-      enforceForRenamedProperties: false,
-    }],
-
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     // https://eslint.org/docs/rules/prefer-numeric-literals
     'prefer-numeric-literals': 'error',
