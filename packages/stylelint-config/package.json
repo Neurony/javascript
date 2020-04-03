@@ -1,0 +1,22 @@
+{
+  "name": "neurony-stylelint-config",
+  "version": "1.0.0",
+  "description": "Stylelint config of Neurony Solutions",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neurony/javascript.git"
+  },
+  "keywords": [
+    "stylelint"
+  ],
+  "author": "Andrei Radoi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Neurony/javascript/issues"
+  },
+  "homepage": "https://github.com/Neurony/javascript#readme"
+}
