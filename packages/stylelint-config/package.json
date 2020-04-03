@@ -1,6 +1,6 @@
 {
-  "name": "neurony-stylelint-config",
-  "version": "1.0.1",
+  "name": "stylelint-config-neurony",
+  "version": "1.0.2",
   "description": "Stylelint config of Neurony Solutions",
   "main": "stylelint.config.js",
   "scripts": {
