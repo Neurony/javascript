@@ -2,7 +2,9 @@
 
 module.exports = {
   rules: {
-    "at-rule-no-unknown": true,
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+    }],    
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": [
