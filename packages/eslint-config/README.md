@@ -1,18 +1,20 @@
-# How to install & use
+### eslint-config-neurony
 
-## 1. In project root run:
+# Setup
+
+### 1. In project root run:
 ```sh
 npm i eslint-config-neurony
 ```
 
-## 2. In project root make a folder called ‘styleguide’ and in it create a new index.js file:
+### 2. In project root make a folder called ‘styleguide’ and in it create a new index.js file:
 ```sh
 mkdir styleguide
 cd styldeguide
 touch index.js
 ```
 
-## 3. Open index.js and add the following lines:
+### 3. Open index.js and add the following lines:
 ```js
 module.exports = {
   extends: [
@@ -26,7 +28,7 @@ module.exports = {
 };
 ```
 
-## 4. Append this line to package.json scripts: (your js path may differ)
+### 4. Append this line to package.json scripts: (your js path may differ)
 ```
 "eslint": "npx eslint -c styleguide/index.js resources/assets/js/front/app.js --fix",
 ```
@@ -37,8 +39,12 @@ module.exports = {
 "eslint": "npx eslint -c styleguide/index.js resources/assets/js/front/app.js --fix",
 ```
 
-To run:
+
+# Running
+
 ```sh
 npm run eslint
 ```
+
+
 
