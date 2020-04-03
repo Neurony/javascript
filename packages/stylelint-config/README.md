@@ -32,13 +32,13 @@ module.exports = {
 
 ### 4. Append this line to package.json scripts: (your js path may differ)
 ```
-"stylelint": "npx stylelint -c styleguide/stylelint.js resources/assets/css/front/main.css --fix",
+"stylelint": "npx stylelint --config styleguide/stylelint-config.js resources/assets/sass/front/main.sass --fix",
 ```
 
 ## 5. For multiple files, the package.json before mentioned line should look like this:
 
 ```
-"stylelint": "npx stylelint -c styleguide/stylelint-config.js resources/assets/css/front/main.css --fix",
+"stylelint": "npx stylelint --config styleguide/stylelint-config.js resources/assets/sass/front/*.scss --fix",
 ```
 
 
