@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-neurony",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint config for Neurony Solutions based on Airbnb's.",
   "main": "index.js",
   "scripts": {
@@ -43,7 +43,9 @@
   "dependencies": {
     "eslint-config-airbnb-base": "^14.1.0",
     "object.assign": "^4.1.0",
-    "object.entries": "^1.1.1"
+    "object.entries": "^1.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint": "^5.16.0 || ^6.8.0"
   },
   "devDependencies": {
     "@babel/runtime": "^7.8.7",
@@ -59,8 +61,6 @@
     "tape": "^5.0.0-next.4"
   },
   "peerDependencies": {
-    "eslint": "^5.16.0 || ^6.8.0",
-    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3"
   },
   "engines": {
