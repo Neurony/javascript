@@ -4,7 +4,7 @@ module.exports = {
   rules: {
     "at-rule-no-unknown": [true, {
       "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
-    }],    
+    }],
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": [
@@ -26,7 +26,9 @@ module.exports = {
     "no-extra-semicolons": true,
     "no-invalid-double-slash-comments": true,
     "property-no-unknown": true,
-    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-class-no-unknown": [true, {
+      "ignoreAtRules": ["global"]
+    }],
     "selector-pseudo-element-no-unknown": true,
     "selector-type-no-unknown": true,
     "string-no-newline": true,
