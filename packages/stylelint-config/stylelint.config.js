@@ -27,7 +27,7 @@ module.exports = {
     "no-invalid-double-slash-comments": true,
     "property-no-unknown": true,
     "selector-pseudo-class-no-unknown": [true, {
-      "ignoreAtRules": ["global"]
+      "ignorePseudoClasses": ["global"] // for Svelte
     }],
     "selector-pseudo-element-no-unknown": true,
     "selector-type-no-unknown": true,
