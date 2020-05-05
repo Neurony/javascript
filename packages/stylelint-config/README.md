@@ -24,7 +24,7 @@ npm i stylelint-config-neurony --save-dev
 ```
 In this file you can specify any extra rules or settings.
 
-### 4. Append this line to package.json scripts: (your js path may differ)
+### Append this line to package.json scripts: (your js path may differ)
 ```
 "stylelint": "stylelint resources/assets/sass/front/*.scss --fix",
 ```
