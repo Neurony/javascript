@@ -1,15 +1,8 @@
-# CSS / SCSS Style Guide
+# CSS / SCSS Neurony Style Guide
 
 ### Package name: stylelint-config-neurony
 
-# Setup
-
-### 1. In project root run:
-```sh
-npm i stylelint-config-neurony
-```
-
-### Configuration
+### Setup
 
 In your project root run:
 ```
