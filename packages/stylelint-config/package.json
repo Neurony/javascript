@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config-neurony",
+  "name": "neurony-stylelint-config",
   "version": "1.0.5",
   "description": "Stylelint config of Neurony Solutions",
   "main": "stylelint.config.js",
@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/Neurony/javascript/issues"
   },
-  "homepage": "https://github.com/Neurony/javascript#readme"
+  "homepage": "https://github.com/Neurony/javascript#readme",
+  "dependencies": {}
 }

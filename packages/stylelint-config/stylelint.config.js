@@ -3,7 +3,7 @@
 module.exports = {
   rules: {
     "at-rule-no-unknown": [true, {
-      "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin", "at-root"]
     }],
     "block-no-empty": true,
     "color-no-invalid-hex": true,
@@ -39,6 +39,6 @@ module.exports = {
     "block-opening-brace-space-before": 'always',
     "block-opening-brace-newline-after": 'always',
     "block-closing-brace-newline-before": 'always',
-    "selector-max-id": 0,
+    "selector-max-id": 0
   }
 };

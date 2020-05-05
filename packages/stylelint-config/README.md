@@ -9,38 +9,25 @@
 npm i stylelint-config-neurony
 ```
 
-### 2. In project root make a folder called ‘styleguide’ and in it create a new stylelint.js file:
-```sh
-mkdir styleguide
-cd styleguide
-touch stylelint.js
-```
+### Configuration
 
-### 3. Open index.js and add the following lines:
-```js
-module.exports = {
-  extends: [
-    'stylelint-config-neurony'
-  ].map(require.resolve),
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
-  rules: {},
-};
+In your project root run:
 ```
+npm i -g stylelint
+npm i stylelint-config-neurony --save-dev
+```
+ In your project root create a file called .stylelintrc and paste this into it: 
+```
+{   
+  "extends": "stylelint-config-neurony"
+}
+```
+In this file you can specify any extra rules or settings.
 
 ### 4. Append this line to package.json scripts: (your js path may differ)
 ```
-"stylelint": "npx stylelint --config styleguide/stylelint-config.js resources/assets/sass/front/main.sass --fix",
+"stylelint": "stylelint resources/assets/sass/front/*.scss --fix",
 ```
-
-## 5. For multiple files, the package.json before mentioned line should look like this:
-
-```
-"stylelint": "npx stylelint --config styleguide/stylelint-config.js resources/assets/sass/front/*.scss --fix",
-```
-
 
 # Running
 
@@ -50,7 +37,6 @@ npm run stylelint
 
 # Documentation
 
-To use those, make sure you have stylelint (https://www.npmjs.com/package/stylelint) package installed and stylelint.config.js copied at the root of the project.
 
 There are some rules in place that are undocumented here. They keep you from writing invalid css, using invalid media queries etc.     
 
